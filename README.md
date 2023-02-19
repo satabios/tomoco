@@ -5,7 +5,7 @@ This is a Deep Learning Pruning Package. This package allows you to prune layers
 
 ## Package install:
 
-```
+```python
 
 pip install tomoco
 
@@ -13,7 +13,7 @@ pip install tomoco
 
 ## Channel Pruning based on Norm:
 
-```
+```python
 from tomoco import pruner
 import timm
 from torchvision.datasets import CIFAR10
