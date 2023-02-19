@@ -177,36 +177,3 @@ def pruner(model,experiment_name, config, input_dims, pruning_stratergy, pruning
     validate(pruned_model, valid_loader)
 
 
-
-class config:
-    lr = 0.001
-    n_classes = 10
-    epochs = 5
-    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    batch_size = 64
-    optim = 0
-    training =1
-    criterion = nn.CrossEntropyLoss()
-
-
-#
-# # TODO:
-# # * Fix Accuracy Metric
-#
-# train_dataset = CIFAR10(root='data/', download=True, transform=transforms.ToTensor())
-# valid_dataset = CIFAR10(root='data/',  download=True,train=False, transform=transforms.ToTensor())
-#
-# # define the data loaders
-# train_loader = DataLoader(dataset=train_dataset, batch_size=config.batch_size, shuffle=True)
-# valid_loader = DataLoader(dataset=valid_dataset, batch_size=config.batch_size, shuffle=False)
-#
-#
-#
-#
-#
-#
-#
-# res50 = timm.create_model("resnet50", pretrained=True).to(config.device)
-# config.optim =  torch.optim.Adam(res50.parameters(), lr=0.001,  amsgrad=True)
-#
-# pruner(res50,"res50", config, (3,64,64), "L1", 0.15,  train_loader, valid_loader)
