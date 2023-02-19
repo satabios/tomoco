@@ -5,15 +5,15 @@ This is a Deep Learning Pruning Package. This package allows you to prune layers
 
 ## Package install:
 
-'''
+```
 
 pip install tomoco
 
-'''
+```
 
 ## Channel Pruning based on Norm:
 
-'''
+```
 from tomoco import pruner
 import timm
 from torchvision.datasets import CIFAR10
@@ -47,4 +47,4 @@ config.optim =  torch.optim.Adam(res50.parameters(), config.lr=0.001,  amsgrad=T
 pruner(res50,"res50", config, (3,64,64), "L1", 0.15,  train_loader, valid_loader)
 
 
-'''
+```
