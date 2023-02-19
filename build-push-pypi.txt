@@ -1,2 +1,0 @@
-Build: python3 setup.py sdist bdist_wheel
-Push: twine upload dist/*

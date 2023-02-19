@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tomoco"
-version = "0.0.5"
+version = "0.0.9"
 dynamic = ["dependencies"]
 authors = [
   { name="Sathyaprakash", email="snaray17@ucsc.edu" },
