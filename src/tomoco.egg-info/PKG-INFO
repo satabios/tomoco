@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: tomoco
-Version: 0.0.9
+Version: 0.0.8
 Summary: A CNN Channel Pruning System
 Author-email: Sathyaprakash <snaray17@ucsc.edu>
 Project-URL: Homepage, https://github.com/satabios/model-compression
