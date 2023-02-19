@@ -7,7 +7,7 @@ with open('README.md') as readme_file:
 
 setup_args = dict(
     name='torch-model-compression',
-    version='0.0.5',
+    version='0.0.6',
     description='Torch Model Compression',
     long_description_content_type="text/markdown",
     long_description=README + '\n\n',
