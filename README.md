@@ -11,6 +11,37 @@ pip install tomoco
 
 ```
 
+
+## Usage:
+
+```python
+
+pruner(model= model,experiment_name = "test" , config = config , input_dims = input_dims , pruning_stratergy= pruning_stratergy, pruning_percent= pruning_percent,  train_loader= train_loader, valid_loader= valid_loader)
+
+* model - Any Model with Convolutional Layers are supported
+* experiment_name - Provide an experiment name to keep track of the model changes
+* config - Make a config class as described below:
+
+    class config:
+        lr = 0.001 
+        n_classes = 10			 # Intended for output classes
+        epochs = 5                         # Set no. of training epochs
+        device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")    # Pick the device availble
+        batch_size = 64			# Set batch size
+        optim = 0
+        training =1                        # Set training to 1 if you would like to train post to prune
+        criterion = nn.CrossEntropyLoss()  # Set your criterion here
+* input_dims - Input dimensions that the model can take in
+* pruning_stratergy - Norm (L1, L2) #Only two norms are currently supported; Future scope of dynamic channel selection
+* pruning_percent - Percentage of which channels for each Convolutional Block would be removed
+* train_loader - Training Data  [ Loaded in a pytorch dataloader ]
+* valid_loader - Validation Data [ Loaded in a pytorch dataloader ]
+
+
+
+
+```
+
 ## Channel Pruning based on Norm:
 
 ```python
