@@ -79,3 +79,14 @@ pruner(res50,"res50", config, (3,64,64), "L1", 0.15,  train_loader, valid_loader
 
 
 ```
+
+
+
+### To-Do
+
+- [x] Universal Channel-Wise Pruning
+- [x] Update Tutorials
+- [+] Fine Grained Purning (In-Progress)
+- [ ] Quantisation
+- [ ] Universal AutoML package
+- [ ] Introduction of Sparsification in Pipeline
